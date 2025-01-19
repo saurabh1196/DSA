@@ -22,10 +22,38 @@
 		09A6799A2D3D079E0059E4C9 /* Learncpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Learncpp; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		09D1990C2D3D2C8000B7EA32 /* Exceptions for "Learncpp" folder in "Learncpp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.cpp,
+			);
+			target = 09A679992D3D079E0059E4C9 /* Learncpp */;
+		};
+		09D1990F2D3D2CB900B7EA32 /* Exceptions for "Sorting" folder in "Learncpp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Insertion.cpp,
+			);
+			target = 09A679992D3D079E0059E4C9 /* Learncpp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		09A6799C2D3D079E0059E4C9 /* Learncpp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				09D1990C2D3D2C8000B7EA32 /* Exceptions for "Learncpp" folder in "Learncpp" target */,
+			);
 			path = Learncpp;
+			sourceTree = "<group>";
+		};
+		09D198FE2D3D2B5400B7EA32 /* Sorting */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				09D1990F2D3D2CB900B7EA32 /* Exceptions for "Sorting" folder in "Learncpp" target */,
+			);
+			path = Sorting;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +72,7 @@
 		09A679912D3D079E0059E4C9 = {
 			isa = PBXGroup;
 			children = (
+				09D198FE2D3D2B5400B7EA32 /* Sorting */,
 				09A6799C2D3D079E0059E4C9 /* Learncpp */,
 				09A6799B2D3D079E0059E4C9 /* Products */,
 			);
@@ -74,6 +103,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				09A6799C2D3D079E0059E4C9 /* Learncpp */,
+				09D198FE2D3D2B5400B7EA32 /* Sorting */,
 			);
 			name = Learncpp;
 			packageProductDependencies = (
@@ -93,6 +123,7 @@
 				TargetAttributes = {
 					09A679992D3D079E0059E4C9 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -244,16 +275,21 @@
 		09A679A22D3D079E0059E4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		09A679A32D3D079E0059E4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
