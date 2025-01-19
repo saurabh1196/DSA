@@ -1,5 +1,5 @@
 //
-//  Insertion.cpp
+//  Bubble.cpp
 //  Sorting
 //
 //  Created by Saurabh Singh Dangi on 19/01/25.
