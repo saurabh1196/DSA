@@ -36,8 +36,11 @@
 		09D199362D3D4B5D00B7EA32 /* Exceptions for "Sorting" folder in "Sorting" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Bubble.cpp,
 				Insertion.cpp,
 				main.cpp,
+				Merge.cpp,
+				Quick.cpp,
 				Selection.cpp,
 			);
 			target = 09D199262D3D325C00B7EA32 /* Sorting */;
