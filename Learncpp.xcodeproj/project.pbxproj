@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		093092272D48003F002CF1FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		09A679982D3D079E0059E4C9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,15 +37,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		093092292D48003F002CF1FB /* Searching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Searching; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A6799A2D3D079E0059E4C9 /* Learncpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Learncpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D199272D3D325C00B7EA32 /* Sorting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sorting; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		093092392D4800AF002CF1FB /* Exceptions for "Searching" folder in "Searching" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BinarySearch.cpp,
+			);
+			target = 093092282D48003F002CF1FB /* Searching */;
+		};
+		0930923A2D4800EA002CF1FB /* Exceptions for "Searching" folder in "Learncpp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BinarySearch.cpp,
+			);
+			target = 09A679992D3D079E0059E4C9 /* Learncpp */;
+		};
 		09D199362D3D4B5D00B7EA32 /* Exceptions for "Sorting" folder in "Sorting" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Bubble.cpp,
+				Heap.cpp,
 				Insertion.cpp,
 				main.cpp,
 				Merge.cpp,
@@ -48,6 +73,15 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0930921D2D47EA66002CF1FB /* Searching */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0930923A2D4800EA002CF1FB /* Exceptions for "Searching" folder in "Learncpp" target */,
+				093092392D4800AF002CF1FB /* Exceptions for "Searching" folder in "Searching" target */,
+			);
+			path = Searching;
+			sourceTree = "<group>";
+		};
 		09A6799C2D3D079E0059E4C9 /* Learncpp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Learncpp;
@@ -64,6 +98,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		093092262D48003F002CF1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09A679972D3D079E0059E4C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +125,7 @@
 		09A679912D3D079E0059E4C9 = {
 			isa = PBXGroup;
 			children = (
+				0930921D2D47EA66002CF1FB /* Searching */,
 				09A6799C2D3D079E0059E4C9 /* Learncpp */,
 				09D199282D3D325C00B7EA32 /* Sorting */,
 				09A6799B2D3D079E0059E4C9 /* Products */,
@@ -95,6 +137,7 @@
 			children = (
 				09A6799A2D3D079E0059E4C9 /* Learncpp */,
 				09D199272D3D325C00B7EA32 /* Sorting */,
+				093092292D48003F002CF1FB /* Searching */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +145,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		093092282D48003F002CF1FB /* Searching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0930922D2D48003F002CF1FB /* Build configuration list for PBXNativeTarget "Searching" */;
+			buildPhases = (
+				093092252D48003F002CF1FB /* Sources */,
+				093092262D48003F002CF1FB /* Frameworks */,
+				093092272D48003F002CF1FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Searching;
+			packageProductDependencies = (
+			);
+			productName = Searching;
+			productReference = 093092292D48003F002CF1FB /* Searching */;
+			productType = "com.apple.product-type.tool";
+		};
 		09A679992D3D079E0059E4C9 /* Learncpp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09A679A12D3D079E0059E4C9 /* Build configuration list for PBXNativeTarget "Learncpp" */;
@@ -115,6 +177,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				0930921D2D47EA66002CF1FB /* Searching */,
 				09A6799C2D3D079E0059E4C9 /* Learncpp */,
 			);
 			name = Learncpp;
@@ -155,6 +218,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					093092282D48003F002CF1FB = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					09A679992D3D079E0059E4C9 = {
 						CreatedOnToolsVersion = 16.0;
 						LastSwiftMigration = 1600;
@@ -180,11 +246,19 @@
 			targets = (
 				09A679992D3D079E0059E4C9 /* Learncpp */,
 				09D199262D3D325C00B7EA32 /* Sorting */,
+				093092282D48003F002CF1FB /* Searching */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		093092252D48003F002CF1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09A679962D3D079E0059E4C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +276,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0930922E2D48003F002CF1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0930922F2D48003F002CF1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		09A6799F2D3D079E0059E4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +447,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0930922D2D48003F002CF1FB /* Build configuration list for PBXNativeTarget "Searching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0930922E2D48003F002CF1FB /* Debug */,
+				0930922F2D48003F002CF1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		09A679952D3D079E0059E4C9 /* Build configuration list for PBXProject "Learncpp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
