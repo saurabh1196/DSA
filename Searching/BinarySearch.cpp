@@ -3,7 +3,7 @@
 //  Searching
 //
 //  Created by Saurabh Singh Dangi on 27/01/25.
-//  O(nlogn)
+//  O(logn)
 
 #include <stdio.h>
 #include <iostream>
